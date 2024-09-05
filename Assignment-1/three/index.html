@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driven Calculator</title>
+</head>
+<body>
+    <h3>Menu Driven Calculator</h3>
+    <script>
+        function calculator() {
+            var num1 = parseFloat(prompt("Enter the first number:"));
+            var num2 = parseFloat(prompt("Enter the second number:"));
+            var operator = prompt("Enter operator (+, -, *, /):");
+            var result;
+            switch (operator) {
+                case '+':
+                    result = num1 + num2;
+                    break;
+                case '-':
+                    result = num1 - num2;
+                    break;
+                case '*':
+                    result = num1 * num2;
+                    break;
+                case '/':
+                    if (num2 !== 0) {
+                        result = num1 / num2;
+                    } else {
+                        result = "Division by zero is not allowed.";
+                    }
+                    break;
+                default:
+                    result = "Invalid operator.";
+            }
+            alert("Result: " + result);
+        }
+        window.onload = calculator;
+    </script>
+    
+</body>
+</html>
