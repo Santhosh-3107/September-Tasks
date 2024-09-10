@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String Functions</title>
+</head>
+<body>
+    <h2>Reverse a String</h2>
+    <p id="reverseResult"></p>
+
+    <script>
+        // Function to reverse a string without using inbuilt methods
+        function reverseString(str) {
+            let reversedStr = '';
+            for (let i = str.length - 1; i >= 0; i--) {
+                reversedStr += str[i];
+            }
+            return reversedStr;
+        }
+
+        // Example input
+        const stringToReverse = "Hello";
+        const reversedString = reverseString(stringToReverse);
+
+        // Display results
+        document.getElementById('reverseResult').innerHTML = `
+            Reversing the string "${stringToReverse}": ${reversedString}
+        `;
+    </script>
+</body>
+</html>

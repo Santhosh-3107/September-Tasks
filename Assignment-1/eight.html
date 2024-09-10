@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Sorter</title>
+</head>
+<body>
+    <h2>Array Sorter</h2>
+    <p id="getresult"></p>
+
+    <script>
+        function sortArrayAscending(arr) {
+            // Sort the array in ascending order
+            arr.sort((a, b) => a - b);
+            return arr;
+        }
+
+        // Example input
+        let arrayy = [3, 2, 1, 4, 5, 45];
+        
+        // Sort the array
+        let sortedArray = sortArrayAscending(arrayy);
+
+        // Display the result
+        document.getElementById('getresult').textContent = `Sorted array: [${sortedArray.join(', ')}]`;
+    </script>
+</body>
+</html>
