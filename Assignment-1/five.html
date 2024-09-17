@@ -18,7 +18,6 @@
                 resultElement.textContent = "Error: Units should be a positive number.";
                 return;
             }
-
             // Calculate the bill based on the number of units
             if (units <= 50) {
                 totalBill = units * 0.50;
@@ -29,17 +28,13 @@
             } else {
                 totalBill = (50 * 0.50) + (100 * 0.75) + (100 * 1.20) + ((units - 250) * 1.50);
             }
-
             // Apply a surcharge of 20%
             totalBill = totalBill + (totalBill * 0.20);
-
             // Display the final bill amount
             resultElement.textContent = `The total electricity bill is INR ${totalBill.toFixed(2)}`;
         }
-
         // Input from the user
         let units = parseFloat(prompt("Enter the number of electricity units:"));
-
         // Calculate and display the bill
         calculateElectricityBill(units);
     </script>

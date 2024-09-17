@@ -1,4 +1,4 @@
-var alphabet = 'D';
+var alphabet = 'e';
 
 switch (alphabet.toLowerCase()){
     case 'a':
@@ -6,7 +6,7 @@ switch (alphabet.toLowerCase()){
     case 'i':
     case 'o':
     case 'u':
-        document.write(alphabet+ "is a vowel.");
+        document.write(alphabet+ " is a vowel.");
         break;
         case 'b': case 'c': case 'd': case 'f': case 'g':
         case 'h': case 'j': case 'k': case 'l': case 'm':
